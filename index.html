@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/images/image copy.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatoo — From Idea to Ads at AI Speed</title>
+    <meta name="description" content="Chatoo is an AI creative studio for short-form ads, product visuals, TV commercials, and AI brand ambassadors. Fast iterations. Brand-safe workflows. Consistent quality." />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://chatoo.netlify.app/" />
+    <meta property="og:title" content="Chatoo — From Idea to Ads at AI Speed" />
+    <meta property="og:description" content="AI creative studio for short-form ads, product visuals, TV commercials, and AI brand ambassadors. Fast iterations. Brand-safe workflows. Consistent quality." />
+    <meta property="og:image" content="https://chatoo.netlify.app/public/images/image%20copy.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Chatoo" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://chatoo.netlify.app/" />
+    <meta name="twitter:title" content="Chatoo — From Idea to Ads at AI Speed" />
+    <meta name="twitter:description" content="AI creative studio for short-form ads, product visuals, TV commercials, and AI brand ambassadors. Fast iterations. Brand-safe workflows. Consistent quality." />
+    <meta name="twitter:image" content="https://chatoo.netlify.app/public/images/image%20copy.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="shortcut icon" href="./public/images/image copy.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!-- Announcement banner -->
+    <div class="announce"><span data-i18n="announce">New: AI Brand Ambassadors — Always-On Content Without a Crew.</span> <a href="#work"><span data-i18n="announceLearn">Learn More</span> →</a></div>
+
+    <!-- Navbar -->
+    <nav class="nav" id="nav">
+      <a href="#hero" class="brand" aria-label="Chatoo">
+        <img src="./public/images/image copy.png" alt="Chatoo" class="brand-logo" />
+        <span class="brand-text">CHATOO</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#work" data-i18n="navWork">What We Do</a>
+        <a href="#process" data-i18n="navProcess">How We Work</a>
+        <a href="#proof" data-i18n="navProof">Proof</a>
+        <a href="#automation" data-i18n="navAutomation">AI Automation</a>
+        <a href="#portfolio" data-i18n="navPortfolio">Portfolio</a>
+        <a href="#founder" data-i18n="navFounder">Founder</a>
+        <a href="#pricing" data-i18n="navPricing">Pricing</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </div>
+      <div class="nav-right">
+        <div class="lang-switch" role="tablist" aria-label="Language">
+          <button class="lang-btn active" data-lang="en" role="tab">EN</button>
+          <button class="lang-btn" data-lang="sl" role="tab">SL</button>
+          <button class="lang-btn" data-lang="bs" role="tab">BS/HR/SR</button>
+        </div>
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta" data-i18n="navCta">Start a Project</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+
+    <!-- Mobile overlay -->
+    <div class="mobile-overlay" id="mobileOverlay">
+      <div class="mobile-links">
+        <a href="#work" data-i18n="navWork">What We Do</a>
+        <a href="#process" data-i18n="navProcess">How We Work</a>
+        <a href="#proof" data-i18n="navProof">Proof</a>
+        <a href="#automation" data-i18n="navAutomation">AI Automation</a>
+        <a href="#portfolio" data-i18n="navPortfolio">Portfolio</a>
+        <a href="#founder" data-i18n="navFounder">Founder</a>
+        <a href="#pricing" data-i18n="navPricing">Pricing</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+        <a href="#contact" class="btn btn-primary" data-i18n="navCta">Start a Project</a>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" aria-hidden="true" class="hero-bg-img" />
+        <div class="hero-bg-overlay"></div>
+      </div>
+      <canvas class="mesh-canvas" id="meshCanvas"></canvas>
+      <div class="orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+      </div>
+      <div class="hero-split">
+        <div class="hero-left">
+          <div class="hero-badge"><span class="pulse-dot"></span><span data-i18n="heroBadge">AI Creative Studio</span></div>
+          <h1 class="hero-title">
+            <span class="line cyan" data-i18n="heroLine1">FROM IDEA TO ADS</span>
+            <span class="line white" data-i18n="heroLine2">AT AI SPEED</span>
+          </h1>
+          <p class="hero-sub" data-i18n="heroSub">AI creative studio for short-form ads, product visuals, and brand content. Fast iterations. Brand-safe workflows. Consistent quality.</p>
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-primary" data-i18n="heroCta1">Start a Project</a>
+            <a href="#portfolio" class="btn btn-outline" data-i18n="heroCta2">See Our Work</a>
+          </div>
+          <div class="hero-trust">
+            <span data-i18n="trust1">Concept → Deliverables in Days</span>
+            <span class="sep">·</span>
+            <span data-i18n="trust2">Brand-Safe Workflows</span>
+            <span class="sep">·</span>
+            <span data-i18n="trust3">EU / Global Clients</span>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="hero-visual">
+            <div class="hero-visual-main">
+              <img src="./public/images/ai_generating_ads.jpg" alt="AI creative production" loading="eager" />
+              <div class="hero-visual-overlay"></div>
+              <div class="hv-label"><span class="hv-dot"></span><span class="hv-text">AI generating ad variants...</span></div>
+            </div>
+            <div class="hero-visual-row">
+              <div class="hero-visual-thumb">
+                <img src="https://images.pexels.com/photos/3062541/pexels-photo-3062541.jpeg?auto=compress&cs=tinysrgb&w=300" alt="" loading="eager" />
+                <span class="thumb-tag">TikTok</span>
+              </div>
+              <div class="hero-visual-thumb">
+                <img src="./public/images/product.jpg" alt="" loading="eager" />
+                <span class="thumb-tag">Product</span>
+              </div>
+              <div class="hero-visual-thumb">
+                <img src="https://images.pexels.com/photos/2873486/pexels-photo-2873486.jpeg?auto=compress&cs=tinysrgb&w=300" alt="" loading="eager" />
+                <span class="thumb-tag">TV 15s</span>
+              </div>
+            </div>
+              <div class="float-card fc-1">
+                <svg class="fc-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 6"/><polyline points="14 6 21 6 21 13"/></svg>
+                <div><div class="fc-num">12x</div><div class="fc-label" data-i18n="fc1Label">More ad variants per week</div></div>
+              </div>
+              <div class="float-card fc-2">
+                <svg class="fc-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="5" x2="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg>
+                <div><div class="fc-num">70%</div><div class="fc-label" data-i18n="fc2Label">Lower cost vs. shoot</div></div>
+              </div>
+              <div class="float-card fc-3">
+                <svg class="fc-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+                <div><div class="fc-num">3</div><div class="fc-label" data-i18n="fc3Label">Revision rounds included</div></div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="ticker">
+        <div class="ticker-track" data-i18n="ticker">SHORT-FORM VIDEO ADS · AI PRODUCT VISUALS · TV COMMERCIALS · AI BRAND AMBASSADORS · TIKTOK · REELS · SHORTS · FAST ITERATIONS · BRAND CONSISTENCY · AI SPEED ·</div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Marquee -->
+    <section class="tech-marquee">
+      <div class="container">
+        <p class="tech-label" data-i18n="techLabel">Powered by a modern AI production stack</p>
+        <div class="tech-track">
+          <div class="tech-item">⚡ Stable Video Diffusion</div>
+          <div class="tech-item">🎨 Midjourney v6</div>
+          <div class="tech-item">🎬 Runway Gen-3</div>
+          <div class="tech-item">🧠 GPT-4o</div>
+          <div class="tech-item">🎙️ ElevenLabs</div>
+          <div class="tech-item">🖼️ Flux.1</div>
+          <div class="tech-item">🔄 ComfyUI</div>
+          <div class="tech-item">📐 Topaz Labs</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What We Do -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow" data-i18n="workEyebrow">What We Do</span>
+          <h2 class="section-title" data-i18n="workTitle">Creative Production. Scaled With AI.</h2>
+          <p class="section-sub" data-i18n="workSub">We produce across every format — from a 6-second hook to a full TV commercial. No crew. No delays. Just results.</p>
+        </div>
+        <div class="grid grid-2">
+          <div class="card glass reveal" data-shimmer>
+            <div class="card-img"><img src="https://images.pexels.com/photos/3062541/pexels-photo-3062541.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Short-form video ads" loading="lazy" /></div>
+            <div class="card-body">
+              <div class="card-icon">📱</div>
+              <h3 data-i18n="svc1Title">Short-Form Video Ads</h3>
+              <p data-i18n="svc1Desc">TikTok, Instagram Reels, YouTube Shorts. Multiple hooks, angles, and variants for A/B testing. Fast turnaround, built for the algorithm.</p>
+              <a href="#contact" class="card-link" data-i18n="learnMore">Learn More →</a>
+            </div>
+          </div>
+          <div class="card glass reveal" data-shimmer>
+            <div class="card-img"><img src="./public/images/product.jpg" alt="AI product visuals" loading="lazy" /></div>
+            <div class="card-body">
+            
+              <h3 data-i18n="svc2Title">AI Product Visuals</h3>
+              <p data-i18n="svc2Desc">Lifestyle shots, product photography variations, ad formats and social assets — all AI-generated. Studio-grade quality, zero shoot days.</p>
+              <a href="#contact" class="card-link" data-i18n="learnMore">Learn More →</a>
+            </div>
+          </div>
+          <div class="card glass reveal" data-shimmer>
+            <div class="card-img"><img src="https://images.pexels.com/photos/2873486/pexels-photo-2873486.jpeg?auto=compress&cs=tinysrgb&w=600" alt="TV commercials" loading="lazy" /></div>
+            <div class="card-body">
+              
+              <h3 data-i18n="svc3Title">TV Commercials</h3>
+              <p data-i18n="svc3Desc">AI-assisted production + post-production workflows for broadcast-ready content. Cinematic quality at a fraction of traditional cost.</p>
+              <a href="#contact" class="card-link" data-i18n="learnMore">Learn More →</a>
+            </div>
+          </div>
+          <div class="card glass reveal" data-shimmer>
+            <div class="card-img"><img src="./public/images/ai_brand.jpg"  alt="AI brand ambassadors" loading="lazy" /></div>
+            <div class="card-body">
+              
+              <h3 data-i18n="svc4Title">AI Brand Ambassadors</h3>
+              <p data-i18n="svc4Desc">Virtual influencers and AI-powered brand personas for always-on content. Consistent, scalable, and completely brand-controlled.</p>
+              <a href="#contact" class="card-link" data-i18n="learnMore">Learn More →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How We Work -->
+    <section class="section section-dark process" id="process">
+      <div class="scanline"></div>
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow" data-i18n="procEyebrow">How We Work</span>
+          <h2 class="section-title" data-i18n="procTitle">The Fast Iteration System</h2>
+          <p class="section-sub" data-i18n="procSub">From concept to variants to ready-for-testing — in days, not weeks.</p>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <div class="step-num">01</div>
+            <div class="step-label" data-i18n="step1Label">CONCEPT</div>
+            <p data-i18n="step1Desc">We take your brief, product, and brand guidelines. We define the hook, the angle, and the creative direction.</p>
+          </div>
+          <div class="step-dash"></div>
+          <div class="step reveal">
+            <div class="step-num">02</div>
+            <div class="step-label" data-i18n="step2Label">VARIANTS</div>
+            <p data-i18n="step2Desc">AI generates multiple creative variations — different hooks, formats, visual styles. You review and select.</p>
+          </div>
+          <div class="step-dash"></div>
+          <div class="step reveal">
+            <div class="step-num">03</div>
+            <div class="step-label" data-i18n="step3Label">DELIVERABLES</div>
+            <p data-i18n="step3Desc">Brand-safe, production-ready assets delivered. Formatted for every platform. Ready to test immediately.</p>
+          </div>
+        </div>
+        <div class="pills reveal">
+          <span class="pill" data-i18n="pill1">⚡ Days, Not Weeks</span>
+          <span class="pill" data-i18n="pill2">🛡️ Brand-Safe Guardrails</span>
+          <span class="pill" data-i18n="pill3">✅ Approval Flow Included</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proof / Case Studies -->
+<section class="section section-light" id="proof">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow dark" data-i18n="proofEyebrow">Proof</span>
+      <h2 class="section-title dark" data-i18n="proofTitle">What We've Built</h2>
+      <p class="section-sub dark" data-i18n="proofSub">Real results. Real clients. Real speed.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="case-card reveal" data-shimmer>
+        <div class="case-img"><img src="./public/images/transport_company_dashboard.jpg" alt="Transport company automation" loading="lazy" /></div>
+        <div class="case-body">
+          <span class="badge">🚛 <span data-i18n="case1Badge">Transport Company</span></span>
+          <h3 data-i18n="case1Title">0 Manual Calls</h3>
+          <p data-i18n="case1Story">Built an AI automation system: delay detected → SMS sent in 60 seconds. Invoice auto-sent on delivery. Quote generated in 2 minutes at 22:14. Result: 14 hours saved per week. Drivers drive. Customers informed. Boss sleeps.</p>
+          <div class="metric" data-i18n="case1Metric">14 hrs/week saved</div>
+        </div>
+      </div>
+      <div class="case-card reveal" data-shimmer>
+        <div class="case-img"><img src="./public/images/construction_company_software.jpg" alt="Construction company AI quote" loading="lazy" /></div>
+        <div class="case-body">
+          <span class="badge">🏗️ <span data-i18n="case2Badge">Construction Company</span></span>
+          <h3 data-i18n="case2Title">12-Minute Quote</h3>
+          <p data-i18n="case2Story">AI read blueprints, calculated materials, and generated a client proposal in 12 minutes. The owner used to spend 4 hours on this manually. He's now our client.</p>
+          <div class="metric" data-i18n="case2Metric">4 hrs → 12 mins</div>
+        </div>
+      </div>
+      <div class="case-card reveal" data-shimmer>
+        <div class="case-img"><img src="./public/images/promo_work.png" alt="AI generated product promo video" loading="lazy" /></div>
+        <div class="case-body">
+          <span class="badge">🎬 <span data-i18n="case3Badge">Product Promo Video</span></span>
+          <h3 data-i18n="case3Title">No Crew</h3>
+          <p data-i18n="case3Story">Produced a cinematic product promo: AI-generated visuals with precise textures, cinematic lighting, then animated into a 15-second video using structured prompts. Studio-grade footage. No camera. No crew. A few hours.</p>
+          <div class="metric" data-i18n="case3Metric">Studio quality, 0 shoot days</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Portfolio Gallery -->
+    <section class="section section-dark" id="portfolio">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow" data-i18n="portEyebrow">Portfolio</span>
+          <h2 class="section-title" data-i18n="portTitle">Selected Work</h2>
+          <p class="section-sub" data-i18n="portSub">A glimpse of what AI-native production looks like in practice.</p>
+        </div>
+        <div class="portfolio-grid">
+          <div class="portfolio-item reveal" data-cat="Video Ad">
+            <img src="./public/images/skincare_reel_hook.jpg" alt="Reels ad" loading="lazy" />
+            <div class="portfolio-overlay"><span class="portfolio-cat">Reels Ad</span><span class="portfolio-name" data-i18n="pf1">Skincare Reels Hook</span></div>
+          </div>
+          <div class="portfolio-item reveal" data-cat="Product">
+            <img src="./public/images/beverage_can.webp" alt="Product visual" loading="lazy" />
+            <div class="portfolio-overlay"><span class="portfolio-cat">Product Visual</span><span class="portfolio-name" data-i18n="pf2">Beverage Lifestyle Set</span></div>
+          </div>
+          <div class="portfolio-item reveal" data-cat="TV">
+            <img src="https://images.pexels.com/photos/3062541/pexels-photo-3062541.jpeg?auto=compress&cs=tinysrgb&w=700" alt="TV commercial" loading="lazy" />
+            <div class="portfolio-overlay"><span class="portfolio-cat">TV Commercial</span><span class="portfolio-name" data-i18n="pf3">Auto Brand 15s Spot</span></div>
+          </div>
+          <div class="portfolio-item reveal" data-cat="Ambassador">
+            <img src="./public/images/ai_brand.jpg" alt="AI ambassador" loading="lazy" />
+            <div class="portfolio-overlay"><span class="portfolio-cat">AI Ambassador</span><span class="portfolio-name" data-i18n="pf4">Virtual Fashion Persona</span></div>
+          </div>
+          <div class="portfolio-item reveal" data-cat="Product">
+            <img src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Product render" loading="lazy" />
+            <div class="portfolio-overlay"><span class="portfolio-cat">Product Visual</span><span class="portfolio-name" data-i18n="pf5">Tech Gadget Studio Shot</span></div>
+          </div>
+          <div class="portfolio-item reveal" data-cat="Video Ad">
+            <img src="./public/images/food_delivery_hook.jpg" alt="Shorts ad" loading="lazy" />
+            <div class="portfolio-overlay"><span class="portfolio-cat">Shorts Ad</span><span class="portfolio-name" data-i18n="pf6">Food Delivery Hook</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Automation -->
+    <section class="section" id="automation">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow" data-i18n="autoEyebrow">AI Automation</span>
+          <h2 class="section-title" data-i18n="autoTitle">AI Systems for Businesses</h2>
+          <p class="section-sub" data-i18n="autoSub">62% of enquiries in businesses go unanswered — not because owners don't care, but because they were on-site, in a meeting, or off the clock. We fix that.</p>
+        </div>
+        <div class="grid grid-3">
+          <div class="auto-card reveal">
+            <div class="auto-icon">💬</div>
+            <h3 data-i18n="auto1Title">AI Response Agent</h3>
+            <p data-i18n="auto1Desc">Replies to enquiries in under 2 minutes — any hour of the day. Qualifies the lead. Notifies you only when they're ready to buy. Set up in 48 hours.</p>
+          </div>
+          <div class="auto-card reveal">
+            <div class="auto-icon">📦</div>
+            <h3 data-i18n="auto2Title">Delivery & Logistics Automation</h3>
+            <p data-i18n="auto2Desc">AI detects delays → customer SMS in 60 seconds. Delivery confirmed → invoice sent automatically. New enquiry at 22:14 → quote sent by 22:16.</p>
+          </div>
+          <div class="auto-card reveal">
+            <div class="auto-icon">📋</div>
+            <h3 data-i18n="auto3Title">Document & Quote Automation</h3>
+            <p data-i18n="auto3Desc">AI reads plans, calculates materials, generates proposals. What took 4 hours now takes 12 minutes.</p>
+          </div>
+        </div>
+        <div class="reveal" style="text-align:center;margin-top:3rem">
+          <a href="#contact" class="link-arrow" data-i18n="autoCta">Does your industry have the same problem? Write to us. →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founder -->
+    <section class="section founder" id="founder">
+      <div class="founder-grid">
+        <div class="founder-left reveal">
+          <span class="eyebrow" data-i18n="founderEyebrow">Founder</span>
+          <h2 class="section-title" data-i18n="founderTitle">Built by someone who believes the production industry already changed.</h2>
+          <blockquote data-i18n="founderQuote">"The production industry didn't change 5 years from now. It already changed. And clients paying for expensive shoot days? They just don't know it yet. I work with brands that want to be first — not last."</blockquote>
+          <a href="https://www.linkedin.com/in/elvin-%C5%A1umar-124aa7315/" target="_blank" rel="noopener" class="link-arrow" data-i18n="founderCta">Connect with Elvin →</a>
+        </div>
+        <div class="founder-right reveal">
+          <div class="photo-frame">
+            <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+            <div class="photo-placeholder">
+              <img src="./public/images/founder.jpg" alt="Elvin Šumar — Founder, Chatoo LLC" loading="lazy" />
+            </div>
+          </div>
+          <div class="founder-name">Elvin Šumar</div>
+          <div class="founder-role" data-i18n="founderRole">Founder, Chatoo LLC</div>
+          <div class="founder-tags">
+            <span class="tag" data-i18n="tag1">AI Creative</span>
+            <span class="tag" data-i18n="tag2">Automation</span>
+            <span class="tag" data-i18n="tag3">EU/Global</span>
+            <span class="tag" data-i18n="tag4">Founded 2025</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="section section-dark stats" id="stats">
+      <div class="container">
+        <div class="grid grid-4">
+          <div class="stat-card reveal">
+            <div class="stat-num" data-count="60" data-suffix="s">0</div>
+            <div class="stat-label" data-i18n="stat1">AI detects delay → SMS sent to customer</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-num" data-count="48" data-suffix="h">0</div>
+            <div class="stat-label" data-i18n="stat2">Time to set up an AI response system</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-num" data-count="12" data-suffix="min">0</div>
+            <div class="stat-label" data-i18n="stat3">Quote generation — what took 4 hrs now takes</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-num" data-count="62" data-suffix="%">0</div>
+            <div class="stat-label" data-i18n="stat4">of enquiries go unanswered without automation</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow" data-i18n="testEyebrow">Testimonials</span>
+          <h2 class="section-title" data-i18n="testTitle">What Clients Say</h2>
+        </div>
+        <div class="grid grid-3">
+          <div class="testi-card reveal">
+            <div class="testi-stars">★★★★★</div>
+            <p data-i18n="test1Text">"We went from briefing to 12 ad variants in 3 days. Our previous agency took 3 weeks for 3 concepts. This is a different league."</p>
+            <div class="testi-author">
+              <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=100" alt="" loading="lazy" />
+              <div><div class="testi-name">Maja Kovač</div><div class="testi-role" data-i18n="test1Role">Head of Growth · DTC Skincare</div></div>
+            </div>
+          </div>
+          <div class="testi-card reveal">
+            <div class="testi-stars">★★★★★</div>
+            <p data-i18n="test2Text">"The AI response agent paid for itself in the first week. Leads that used to sit overnight now get a reply in under 2 minutes."</p>
+            <div class="testi-author">
+              <img src="https://images.pexels.com/photos/1221511/pexels-photo-1221511.jpeg?auto=compress&cs=tinysrgb&w=100" alt="" loading="lazy" />
+              <div><div class="testi-name">Tomaz Horvat</div><div class="testi-role" data-i18n="test2Role">Owner · Transport & Logistics</div></div>
+            </div>
+          </div>
+          <div class="testi-card reveal">
+            <div class="testi-stars">★★★★★</div>
+            <p data-i18n="test3Text">"A 15-second cinematic promo with zero shoot days. Our CFO didn't believe the invoice. Now every launch starts with Chatoo."</p>
+            <div class="testi-author">
+              <img src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=100" alt="" loading="lazy" />
+              <div><div class="testi-name">Ana Babić</div><div class="testi-role" data-i18n="test3Role">CMO · Consumer Electronics</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who We Work With -->
+    <section class="section section-dark" id="clients">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow" data-i18n="clientsEyebrow">Who We Work With</span>
+          <h2 class="section-title" data-i18n="clientsTitle">Built For Brands That Want to Be First</h2>
+        </div>
+        <div class="grid grid-3">
+          <div class="client-tile reveal"><div class="client-icon">🛍️</div><h3 data-i18n="cl1Title">E-commerce Brands</h3><p data-i18n="cl1Desc">Product visuals and video ads at scale</p></div>
+          <div class="client-tile reveal"><div class="client-icon">📱</div><h3 data-i18n="cl2Title">Social Media Teams</h3><p data-i18n="cl2Desc">Hooks, angles, variants — ready to test</p></div>
+          <div class="client-tile reveal"><div class="client-icon">🏢</div><h3 data-i18n="cl3Title">Marketing Agencies</h3><p data-i18n="cl3Desc">White-label AI production partner</p></div>
+          <div class="client-tile reveal"><div class="client-icon">📺</div><h3 data-i18n="cl4Title">Broadcast Advertisers</h3><p data-i18n="cl4Desc">TV commercial production at AI cost</p></div>
+          <div class="client-tile reveal"><div class="client-icon">🚛</div><h3 data-i18n="cl5Title">SMEs & Local Businesses</h3><p data-i18n="cl5Desc">Automation systems that save hours daily</p></div>
+          <div class="client-tile reveal"><div class="client-icon">🌍</div><h3 data-i18n="cl6Title">Global Brands</h3><p data-i18n="cl6Desc">Consistent, scalable, brand-safe creative at volume</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow" data-i18n="priceEyebrow">Pricing</span>
+          <h2 class="section-title" data-i18n="priceTitle">Simple, Scalable Plans</h2>
+          <p class="section-sub" data-i18n="priceSub">No retainers. No hidden fees. Pick a format, scale when ready.</p>
+        </div>
+        <div class="grid grid-3">
+          <div class="price-card reveal">
+            <div class="price-name" data-i18n="price1Name">Starter</div>
+            <div class="price-amount">Request a Quote</div>
+            <ul class="price-features">
+              <li data-i18n="price1f1">3 short-form video ads</li>
+              <li data-i18n="price1f2">1 platform format</li>
+              <li data-i18n="price1f3">2 revision rounds</li>
+              <li data-i18n="price1f4">5-day delivery</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline btn-block" data-i18n="priceCta">Get Started</a>
+          </div>
+          <div class="price-card featured reveal">
+            <div class="price-badge" data-i18n="pricePopular">Most Popular</div>
+            <div class="price-name" data-i18n="price2Name">Growth</div>
+            <div class="price-amount">Request a Quote</div>
+            <ul class="price-features">
+              <li data-i18n="price2f1">12 short-form ads / month</li>
+              <li data-i18n="price2f2">All platform formats</li>
+              <li data-i18n="price2f3">AI product visuals included</li>
+              <li data-i18n="price2f4">Unlimited revisions</li>
+              <li data-i18n="price2f5">48h turnaround</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary btn-block" data-i18n="priceCta">Get Started</a>
+          </div>
+          <div class="price-card reveal">
+            <div class="price-name" data-i18n="price3Name">Enterprise</div>
+            <div class="price-amount" data-i18n="priceCustom">Request a Quote</div>
+            <ul class="price-features">
+              <li data-i18n="price3f1">TV commercials + full campaigns</li>
+              <li data-i18n="price3f2">AI brand ambassador development</li>
+              <li data-i18n="price3f3">Automation systems included</li>
+              <li data-i18n="price3f4">Dedicated creative director</li>
+              <li data-i18n="price3f5">Priority delivery</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline btn-block" data-i18n="priceCtaContact">Talk to Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Posts -->
+    <section class="section section-dark" id="posts">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow" data-i18n="postsEyebrow">Insights</span>
+          <h2 class="section-title" data-i18n="postsTitle">From The Studio</h2>
+        </div>
+        <div class="grid grid-4">
+          <article class="post-card reveal">
+  <div class="post-img"><img src="./public/images/transport_company_dashboard.jpg" alt="Transport company automation" loading="lazy" /></div>
+  <div class="post-body">
+    <span class="cat-badge" data-i18n="post1Cat">AI Automation</span>
+    <h3 data-i18n="post1Title">A transport company was calling customers manually every day. We built a system that does it automatically.</h3>
+    <p data-i18n="post1Excerpt">Delay detected, SMS sent in 60 seconds. The whole flow runs without a human in the loop.</p>
+    <div class="post-foot"><span class="post-date">2026</span><a href="https://www.linkedin.com/posts/elvin-%C5%A1umar-124aa7315_ai-avtomatizacija-transport-activity-7462055952947585024-MKqW?utm_source=share&utm_medium=member_desktop&rcm=ACoAADgUKV8B_vWj7d-c6zbeG-ZUJNfvcoSt62U" data-i18n="readMore">Read →</a></div>
+  </div>
+</article>
+          <article class="post-card reveal">
+            <div class="post-img"><img src="./public/images/construction_company_software.jpg" alt="Construction industry AI" loading="lazy" /></div>
+            <div class="post-body">
+              <span class="cat-badge" data-i18n="post2Cat">AI + Industry</span>
+              <h3 data-i18n="post2Title">A builder told me AI will never work in construction. Two weeks later, AI read his blueprints in 12 minutes.</h3>
+              <p data-i18n="post2Excerpt">Materials calculated, proposal generated. He's now our client.</p>
+              <div class="post-foot"><span class="post-date">2026</span><a href="https://www.linkedin.com/posts/elvin-%C5%A1umar-124aa7315_ai-avtomatizacija-gradbeniagptvo-activity-7461694846433427456-pB5U?utm_source=share&utm_medium=member_desktop&rcm=ACoAADgUKV8B_vWj7d-c6zbeG-ZUJNfvcoSt62U" data-i18n="readMore">Read →</a></div>
+            </div>
+          </article>
+          <article class="post-card reveal">
+            <div class="post-img"><img src="./public/images/promo_work.png" alt="Cinematic AI production" loading="lazy" /></div>
+            <div class="post-body">
+              <span class="cat-badge" data-i18n="post3Cat">AI Production</span>
+              <h3 data-i18n="post3Title">We made a cinematic promo video for a client. No crew. No camera. No studio.</h3>
+              <p data-i18n="post3Excerpt">AI-generated visuals, structured prompts, a 15-second cinematic cut in a few hours.</p>
+              <div class="post-foot"><span class="post-date">2026</span><a href="https://www.linkedin.com/posts/elvin-%C5%A1umar-124aa7315_aivideo-contentmarketing-videomarketing-activity-7453055412746043393-x5Dz?utm_source=share&utm_medium=member_desktop&rcm=ACoAADgUKV8B_vWj7d-c6zbeG-ZUJNfvcoSt62U" data-i18n="readMore">Read →</a></div>
+            </div>
+          </article>
+          <article class="post-card reveal">
+            <div class="post-img"><img src="./public/images/ai_generating_ads.jpg" alt="AI response automation" loading="lazy" /></div>
+            <div class="post-body">
+              <span class="cat-badge" data-i18n="post4Cat">Automation</span>
+              <h3 data-i18n="post4Title">62% of enquiries in Slovenian businesses go unanswered. The solution isn't a new employee — it's a system.</h3>
+              <p data-i18n="post4Excerpt">An AI response agent that replies in under 2 minutes, any hour.</p>
+              <div class="post-foot"><span class="post-date">2026</span><a href="https://www.linkedin.com/posts/elvin-%C5%A1umar-124aa7315_avtomatizacija-ai-podjetniagptvo-activity-7460249290163019776-5rW-?utm_source=share&utm_medium=member_desktop&rcm=ACoAADgUKV8B_vWj7d-c6zbeG-ZUJNfvcoSt62U" data-i18n="readMore">Read →</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container contact-wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow" data-i18n="contactEyebrow">Contact</span>
+          <h2 class="section-title" data-i18n="contactTitle">Want to Test New Creatives Next Week?</h2>
+          <p class="section-sub" data-i18n="contactSub">Drop us a message. We'll show you what's possible — fast.</p>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="field"><input type="text" name="name" required placeholder=" " /><label data-i18n="fName">Full Name</label></div>
+          <div class="field"><input type="text" name="company" placeholder=" " /><label data-i18n="fCompany">Company / Brand</label></div>
+          <div class="field"><input type="email" name="email" required placeholder=" " /><label data-i18n="fEmail">Email</label></div>
+          <div class="field select">
+            <select name="need" required>
+              <option value="" disabled selected hidden></option>
+              <option data-i18n="need1">Short-Form Video Ads</option>
+              <option data-i18n="need2">AI Product Visuals</option>
+              <option data-i18n="need3">TV Commercial</option>
+              <option data-i18n="need4">AI Brand Ambassador</option>
+              <option data-i18n="need5">AI Automation System</option>
+              <option data-i18n="need6">Not Sure Yet</option>
+            </select>
+            <label data-i18n="fNeed">I Need</label>
+          </div>
+          <div class="field textarea"><textarea name="project" rows="4" required placeholder=" "></textarea><label data-i18n="fProject">Tell Us About Your Project</label></div>
+          <button type="submit" class="btn btn-primary btn-block" data-i18n="fSubmit">Let's Go →</button>
+          <p class="form-success" id="formSuccess" data-i18n="formSuccess">Thanks — we'll be in touch within 24 hours.</p>
+        </form>
+        <div class="contact-details reveal">
+          <span>🌐 chatoo.agency</span>
+          <span>📧 hello@chatoo.agency</span>
+          <span data-i18n="contactRegion">🌍 EU / Global — Remote-first</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-scan"></div>
+      <div class="container footer-grid">
+       <div class="footer-brand">
+        <span class="footer-brand-text">CHATOO</span>
+        <p data-i18n="footerTagline">Creative production, scaled with AI.</p>
+        <span class="founded-badge" data-i18n="footerFounded">Founded 2025</span>
+        <div class="social-row">
+          <a href="https://www.linkedin.com/company/chatoo-llc/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.26 2.37 4.26 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          </a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X (Twitter)" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 3H22l-7.5 8.6L23 21h-6.9l-5.4-6.7L4.4 21H1.2l8-9.2L1 3h7l4.9 6.1L18.9 3zm-1.2 16.2h1.7L7.4 4.7H5.6l12.1 14.5z"/></svg>
+          </a>
+          <a href="https://tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82a4.3 4.3 0 0 1-1-2.65h-3.1v13.4a2.5 2.5 0 1 1-1.77-2.39V10.9a5.7 5.7 0 1 0 4.87 5.64V9.4a7.3 7.3 0 0 0 4.2 1.33V7.63a4.3 4.3 0 0 1-3.2-1.81z"/></svg>
+          </a>
+        </div>
+      </div>
+        <div class="footer-col">
+          <h4 data-i18n="footerServices">Services</h4>
+          <a href="#work" data-i18n="svc1Title">Short-Form Video Ads</a>
+          <a href="#work" data-i18n="svc2Title">AI Product Visuals</a>
+          <a href="#work" data-i18n="svc3Title">TV Commercials</a>
+          <a href="#work" data-i18n="svc4Title">AI Brand Ambassadors</a>
+          <a href="#automation" data-i18n="footerAuto">AI Automation Systems</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footerConnect">Connect</h4>
+          <a href="https://chatoo.agency" target="_blank" rel="noopener">chatoo.agency</a>
+          <a href="https://www.linkedin.com/in/elvin-%C5%A1umar-124aa7315/" target="_blank" rel="noopener" data-i18n="footerLinkedin">LinkedIn — Elvin Šumar</a>
+          <div class="lang-switch small">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="sl">SL</button>
+            <button class="lang-btn" data-lang="bs">BS</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Chatoo LLC · All Rights Reserved · EU / Global</span>
+      </div>
+    </footer>
+
+    <!-- Custom cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
